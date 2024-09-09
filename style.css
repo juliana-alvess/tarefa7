@@ -1,0 +1,109 @@
+:root{
+    --cor-barras:#D94218;
+    --cor-principal:#591b0a;
+}
+body{
+    margin:0;
+}
+.container{
+    max-width: 1140px;
+    margin: auto;
+}
+.line{
+    background-color: var(--cor-barras);
+    width: 100%;
+    height: 15px;
+}
+.topo{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px;
+    height: 100px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    padding: 10px;
+    width: 64px;
+    height: 64px;
+}
+.nome-empresa{
+    padding-top: 50px;
+    margin: 35px 25px 80px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: var(--cor-principal);
+}
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu1{
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.menu a{
+    font-size: 17px;
+    padding: 15px 19px;
+    text-decoration: none;
+    color: var(--cor-principal);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.menu li:hover>a{
+    background-color: var(--cor-principal);
+    color: #fff;
+}
+.submenu{
+    margin-left: -40px;
+    padding-top: 10px;
+    display: none;
+    position: absolute;
+}
+.menu li:hover>.submenu{
+    display: flex;
+    flex-direction: column;
+}
+.submenu a{
+    font-size: 16px;
+    padding: 10px;
+    color: #fff;
+    background-color: var(--cor-principal);
+    align-content: end;
+    text-decoration: none;
+}
+.banner{
+    background-image: url('../imagens/banner.jpg');
+    background-position: center;
+    background-image: cover;
+}
+.container-banner{
+    display: flex;
+    justify-content: center;
+}
+.banner h1{
+    font-size: 60px;
+    font-weight: bolder;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    padding-top: 60px;
+    line-height: 70;
+    color: var(--cor-principal);
+}
+.banner-imagens{
+    display: flex;
+    flex-direction: column;
+    padding-top: 80px;
+}
+.banner-imagens img{
+    width: 148px;
+    height: 148px;
+    border: 4px solid var(--cor-barras);
+    margin: 20px;
+    box-shadow: 3px 3px 15px #fff;
+    border-radius: 30px;
+    object-fit: cover;
+}
